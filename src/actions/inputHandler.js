@@ -22,6 +22,9 @@ const inputHandler = (input) => {
 					]
 				});
 
+				if (res.data.status.code !== 200)
+					throw new Error("Api.Ai didn't return a proper response; Check if the webhook URL is correct!");
+
 				let payload = getTilybotPayload(res.data.result.fulfillment);
 
 				dispatch({ type: 'ENABLE_TEXT' });

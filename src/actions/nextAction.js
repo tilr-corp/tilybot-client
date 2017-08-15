@@ -30,6 +30,9 @@ const nextAction = () => {
 					getState().queue[0].params
 				);
 
+				if (res.data.status.code !== 200)
+					throw new Error("Api.Ai didn't return a proper response; Check if the webhook URL is correct!");
+
 				dispatch({ type: "NEXT_ACTION" });
 			} else {
 				// res = await api.eventRequest("GENERAL_WELCOME", { contexts: [{ name: "eventTriggered", lifespan: 1 }] });
