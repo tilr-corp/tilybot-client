@@ -3,18 +3,18 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.19.0",
     "react": "^15.6.2",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^15.6.2",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "restify": "^5.2.1",
+    "restify": "^8.3.3",
     "uuid": "^3.2.1"
   },
   "devDependencies": {
-    "react-scripts": "1.0.10"
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
